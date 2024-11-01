@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Early Career Software Engineer, MIT Alum</p>
+                <h1>Hi, I'm <span>Jack</span> Jin</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a recent MIT graduate with a major in Computer Science and Engineering and a minor in Statistics and Data Science. I'm accepted into the Master of Engineering program at MIT and eager to start my professional journey.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Algorithms<br>Dynamic Programming<br>Cryptography/Cyber Security<br>Data Analysis<br>PyTorch and Machine Learning</li>
+                            <li><span>C++</span><br>OpenGL Image Rendering<br>Ray Tracing/Casting<br>Model Simulation<br>Memory Managment</li>
+                            <li><span>JavaScript/TypeScript</span><br>Web Programming<br>Game Development</li>
+                            <li><span>HTML/CSS</span><br>Website Designer<br>UI / UX Design</li>
+                            <li><span>R</span><br>Statistics<br>Data Modeling<br>Regression</li>
+                            <li><span>Java</span><br>Abstraction<br>Inheritance</li>
+                            <li><span>Assembly</span><br>Low Level Machine Code<br>Analysis of Potential Concurrency<br>Performance Measures</li>
+                            <li><span>Communication</span><br>Active Listener<br>Confidence</li>
+                            <li><span>Teamwork</span><br>Collaboration<br>Leadership<br>Project Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2023 - January 2024</span><br>Student Researcher at MIT UROP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Massachusetts Institute of Technology (2024)</span><br>B.S. in Computer Science</li>
+                            <li><span>The Bronx High School of Science (2020)</span><br>High School Diploma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work-item">
+                    <img src="images/work-1.jpg">
+                    <div class="work-info">
+                        <h2>Python-based Voxel Engine</h2>
+                        <p> Engineered a Python-based engine using PyGame and ModernGL, achieving real-time world generation.<br>
+                            Utilized GLM simplex noise algorithm and MIPmaps to generate realistic world landscapes.<br>
+                            Optimized resource usage by implementing face-culling of unnecessary voxel faces.<br>
+                            Designed intuitive GUI allowing user customization of world features.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="images/work-2.jpeg">
+                    <div class="work-info">
+                        <h2>TSAI Space Weather Forecaster</h2>
+                        <p> Led model development; significantly increased predictive accuracy using innovative data sampling and model tuning strategies.<br>
+                            Spearheaded the creation of a robust forecasting model using tsai, improving model reliability for space weather prediction.<br>
+                            Applied diverse data sampling techniques, achieving optimal model performance with tailored train-test-validation splits.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="images/work-3.jpg ">
+                    <div class="work-info">
+                        <h2>Image Classifier</h2>
+                        <p> Built a dual-function tool for image editing and classification; employed advanced neural networks to enhance functionality.<br>
+                            Developed functionalities for pixel manipulation and filter application, including a custom seam carving tool for dynamic image resizing.<br>
+                            Created a convolutional neural network-based classifier and improved accuracy in image categorization through additional neural layers.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">View More</a> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> jackj00125@gmail.com / jinj@alum.mit.edu</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (347) 798-7976</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ace.jackjin/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jackjin_/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jack-jin-130804191/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Jin_Jack_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
